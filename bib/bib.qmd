@@ -14,20 +14,19 @@ nocite: |
 
 ## Fichamentos
 
-### @Haneuse2007 {.unnumbered}
+### @haneuse2007 {.unnumbered}
 
-We have individual-level (infants death) data and group-level (county) data.
+* Data: We have individual-level (infants death) data and group-level (county) data.
 * what does he calls ecological data? Is it the group-level data?
 * "[After saying there is correlation between minority and teen preg. vs. mortality] However, estimating individual-level associations is not possible from the ecological data alone"
 Why? What do they mean by "individual-level associations"?
-"ecological data, consisting of the marginal numbers of deaths, minority babies, and teen mothers"
-* 
+"ecological data, consisting of the marginal numbers of deaths, minority babies, and teen mothers".
 
-Framework:
+Modelo:
 
 * $Y,X,Z$ são (resp.) as indicadoras de mortalizade, minoria e adolesc.
 * $N_{yxzk} = \sum_{i \in I(k)} (Y_i = y)(X_i = x)(Z_i = z)$, toda a população do condado com essas características ou apenas a população de nascidos do condado?
-* $M_{xzk} = \sum_{i \in I(k)} (X_i = x)(Z_i = z)$, toda a população do condado com essas características ou apenas a população de *nascidos* do condado? Acho que o 2º.
+* $M_{xzk} = \sum_{i \in I(k)} (X_i = x)(Z_i = z)$, toda a população do condado com essas características ou apenas a população de **nascidos** do condado? Acho que o 2º.
 * $N_{yxzk} \sim \text{Binomial}(M_{xzk}, p_{xzk})$, em que
 
 $$\operatorname{logit}(p_{xzk}) = \beta_0 + \beta_X x + \beta_Z z + \beta_{XZ} xz + V_k\ .$$
@@ -37,9 +36,16 @@ O efeito das covariáveis indicadores não depende do condado (não muda de cond
 * Why call $\beta$ the "baseline" odds? Ok it's clear now.
 * Why "hybrid likelihood"?
 
-Tentar fazer as contas da página 131
+Resultados e discussão:
 
-Aggregate Data Approach: Prentice, R. L. and Sheppard, L. (1995). Aggregate data studies of disease risk factors. Biometrika 82, 113-1
+* 1
+
+Further reading:
+
+* Metodologia antiga dos autores: @haneuse2006
+* Tentar fazer as contas da página 131
+* Seções 3.4 e 3.5 e apêndice (esquema de amostragem MCMC): "Samples from the *hybrid posterior* are obtained via an auxiliary variable scheme, @tanner1987 (see rejoiner also).
+* Aggregate Data Approach: @prentice1995.
 
 ## Referências {.unnumbered}
 
